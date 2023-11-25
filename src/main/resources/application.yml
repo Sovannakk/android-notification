@@ -9,11 +9,17 @@ spring:
         format_sql: true
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: 2003
-    url: jdbc:postgresql://localhost:5432/android_notification
+    url: jdbc:postgresql://8.219.131.180:8765/fintrack
+    username: root
+    password: P@SSWORD666
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+      minimum-idle: 1
   sql:
     init:
       platform: postgres
+
+
 
 
