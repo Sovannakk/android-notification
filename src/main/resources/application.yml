@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 2003
+    url: jdbc:postgresql://localhost:5432/android_notification
+  sql:
+    init:
+      platform: postgres
+
+
